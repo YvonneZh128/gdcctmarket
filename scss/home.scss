@@ -1,0 +1,446 @@
+
+
+@import "baseon";
+@import "mixin-base";
+
+
+.banner{
+    width:100%;
+    height:400px;
+    margin-top:-14px;
+    position:relative;
+    .swiper-slide{
+        width:100%;
+        height:400px;
+        a{
+            width:100%;
+            height:400px;
+            display:inline-block;
+        }
+        
+    }
+    .swiper-pagination{
+        span{
+            background:#09c762;
+            display: inline-block; 
+            width:30px;
+            height: 10px;
+            border-radius: 0;          
+        }
+    }
+    
+    .bannerul {
+        position:absolute;
+        top:0;
+        right:29px;
+        z-index:999;
+        li{
+            width: 240px;
+            height: 200px;
+            background:red;
+            
+        }
+    }
+}
+
+// tuijian  bufen 
+.tjmodel{
+    width:100%;
+    height:165px;
+//  background:red;
+    margin-top:25px;
+//  float: left;
+    .tjul{
+       
+        li{
+            overflow:hidden;
+            width:165px;
+            height:165px;
+            float: left;
+        }
+        .tjactive{
+            position:relative;
+            height:165px;
+            width:290px;
+//          background:green;
+            img{
+                position: absolute;
+                left:-165px;
+            }
+            
+        }
+        
+        
+    }
+    
+    //gong gao
+    .gonGao{
+        width:233px;
+        height:165px;
+        float: right;
+//      position: absolute;
+//      right:0;
+        
+        h2{
+          font-size:16px;
+//        height:20px;
+          color:#333;
+          padding:6px;
+           border-bottom:1px solid #ccc;
+        }
+        ul{
+             padding-left: 5px;
+            li{
+                margin-top:10px;
+                a{
+                    width:227px;
+                    height:16px;
+                    overflow: hidden;
+                    display: block;
+                    &:hover{
+                        color:#FF4000;
+                        text-decoration: underline;
+                    }
+                }
+                .a-orange{
+                    color:#FF4000;
+                }
+            }
+        }
+    }
+    
+}
+
+
+
+//the First Floor;
+%ahover{
+    color:#FF4000;
+    text-decoration: underline;
+}
+
+//each  Big  Floor
+.firstFloor{
+    width:100%;
+    height:587px;
+    margin-top:18px;
+    position:relative;
+}
+.floor-hd{
+    height:40px;
+    border-bottom:#eee 1px solid;
+    h2{
+        float:left;
+        font-size:20px;
+        color:#666;   
+        margin-top:8px;     
+    }
+    ul{
+        float:right;
+        margin-top:18px;
+        li{
+            float:left;
+            font-size:12px;
+            a{
+                color:#666;
+                padding:0 10px;
+                border-right:#eee 1px solid ;
+                &:hover{
+                    @extend %ahover;
+                }
+                    
+            }
+        }
+    }
+}
+.fl-catalogue{
+    width:210px;
+    height:546px;
+    background:#FAFAFA;
+    .act{
+        margin:{
+            left:-30px;
+        }
+        z-index:999;
+            
+    }
+    .tags-bd{
+        padding:0 10px;
+        border-bottom: 1px solid #eee;
+    }
+    .tags-list{
+        width:190px;
+        padding-top:10px;
+        line-height:20px;
+        border-bottom:#eee 1px solid;
+        dt{
+            font-weight:bold;
+        }
+        dd{
+            height:40px;
+            overflow: hidden;
+            margin-bottom: 12px;
+            a{
+                display: inline-block;
+                height:20px;
+                margin-right:12px;
+                line-height:20px;
+                &:hover{
+                   @extend %ahover;
+                }
+            }
+        }
+    }
+        
+}
+
+.btnon{
+    background:yellow;
+}
+.fl-top1pro{
+    position:absolute;
+    top:41px;
+    margin-left:210px;
+    float:right;
+    .floor-ba{
+        width:396px;
+        height:299px;
+        margin-left:198px;
+        position:absolute;
+        border-bottom:1px solid #eee;
+        .fl-babtn span{
+            border-radius: 0;
+            display: inline-block;
+            width:30px;
+            
+            height:4px;
+            margin:0 2px;
+            background: green;
+            @include opacity(0.5);
+        }
+    }
+    .fl-on{
+        li{
+            width:197px;
+            height:300px;
+            position: relative;
+            float:left;
+            border-right:1px solid #eee;
+            border-bottom:1px solid #eee;
+            overflow: hidden;
+            img{
+                width:196px;
+                height:299px;
+                position:absolute;
+                z-index:1;
+            }
+        }
+        .li-one{
+            margin-right:395px;
+        }
+        .li-two{
+//          left:196px;
+            border-left:1px solid #eee;
+        }
+        .li-thd{
+//          left:300px;
+        }
+        
+    }
+    
+}
+
+// small menu part
+
+.fl-botpro{
+    margin-left:210px;
+    position:absolute;
+    top:341px;
+    li{
+//      width:198px;
+        height:227px;
+        float:left;
+        padding:{
+            right:23px;
+            top:20px;
+            left:24px;
+        }
+        border:{
+            right:1px solid #eee;
+            bottom: 1px solid #eee;
+        }
+        .p-img{
+            width:150px;
+            height:150px;
+            &:hover{
+                @include opacity(0.7);
+            }
+        }
+        div{
+            width:150px;
+            line-height:18px;
+            overflow: hidden;
+            
+        }
+        .p-name{
+            a{
+                display: inline-block;
+                height:18px;
+                overflow: hidden;
+                &:hover{
+                   @extend %ahover;
+                }
+            }
+        }
+        .p-sale{
+            height:18px;
+            overflow: hidden;
+            color:#FF4000;
+        }
+        .p-price{
+            strong{
+                font-size:16px;
+                color:#e12228;
+            }
+        }
+    }
+}
+
+// the market home part
+
+.markethome{
+    width:100%;
+    height:377px;
+    margin:{
+        top:15px;
+        bottom: 20px;
+    }
+    h2{
+        height:40px;
+        font-size:20px;
+        color:#666;
+        
+    }
+    .mhpanel{
+        height:320px;
+        border:1px solid #eee;
+        padding:0 20px 15px;
+        position:relative;
+        .panel-tj{
+            height:315px;
+            width:395px;
+            float:left;
+            .tj-title{
+                font-size:16px;
+                color:#666;
+                line-height:34px;
+            }
+            dd{
+                height:280px;
+                overflow: hidden;
+                
+                #mhbtn{
+                    width:66px;
+                    height:16px;
+                    bottom:26px;
+                    background:#E6E6E6;
+                    @include opacity(0.5);
+                    border-radius: 10px;
+                    margin-left:172px;
+                    span{
+                        line-height:16px;
+                        background:#fff;
+                        transform: scale(1.5);
+//                      @include opacity(1);
+                        
+                    }
+                    .swiper-pagination-bullet-active{
+                        background:#ff9500;
+//                      @include opacity(1);
+                        
+                    }
+                }
+            }
+            
+        }
+        .hottab{
+            margin-left:20px;
+        }
+        
+        //food tuijian;
+        .panel-food{
+            width:340px;
+            margin-left:20px;
+            position:absolute;
+            top:0;
+            right:0;
+            float: right;
+            .fodtitle{
+                font-size:16px;
+                color:#666;
+                line-height:34px;
+            }
+            .fodmenuimg{
+                height:120px;
+                float:left;
+                position: relative;
+                .imga1{
+                    display: inline-block;
+                    width:164px;
+                    height:120px;
+                    
+                    img{
+                        width:100%;
+                        height:100%;
+                    }
+                }
+                p{
+                    width:154px;
+                    height:23px;
+                    padding:0 5px;
+                    position:relative;
+                    bottom:23px;
+                   background: #000;
+                   @include opacity(0.7);
+                   text-align: center;
+                   a{
+                       color:#fff;
+                       line-height:23px;
+                   }
+                }
+            }
+            .fodmenucont{
+                float:right;
+                ul{
+                    margin:{
+                        bottom:5px;
+                        left:10px;
+                    }
+                    li{
+                        height:24px;  
+                        width:166px;
+                        overflow: hidden;
+                    }
+                }
+                a{
+                    color:#333;
+                    line-height:24px;
+                    
+                    &:hover{
+                        @extend %ahover;
+                    }
+                }
+            }
+            dl{
+                height:154px;
+            }
+            .fodbtm{
+                margin-top:6px;
+            }
+            
+        }
+        
+        
+    }
+}
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户注册-村村通商城</title>
+		<link rel="stylesheet" type="text/css" href="../css/login-Reg.css"/>
+		<script src="../js/require.js" data-main="../js/register.js"></script>
+	</head>
+	<body>
+		<!--页面头部-->
+		<div id="loadheader"></div>
+		
+		<!--页面中心-->
+		<div class="regbody">
+			<div class="middle">
+				<div class="reg-hd">
+					<h3>注册新用户</h3>
+				</div>
+				
+				<form class="regInfo" action="#" method="post">
+					<label class="username"><span class="info">用户名：</span>
+					<input name="username"  type="text" value="以字母开头，只能由字母或数字组成" /><img src=""/>
+					<p></p>
+					</label>
+					<label class="email"><span class="info">电子邮箱：</span>
+					<input name="email"  type="text" value="" /><img src=""/>
+					<p></p>
+					<ul class="checkemail">
+						<li>请选择邮箱类型</li>
+						<li>@qq.com</li>
+						<li>@163.com</li>
+						<li>@126.com</li>
+						<li>@sina.com</li>
+						<li>@hotmail</li>
+						<li>@gmail.com</li>
+						<li>@yahoo.com</li>
+						<li>@139.com</li>
+					</ul>
+					</label>
+					<label class="pwd"><span class="info">密码：</span>
+					<input name="pwd" type="password" value="" /><img src=""/>
+					<p></p>
+					</label>
+					<label class="surepwd"><span class="info">确认密码：</span>
+					<input name="surepwd" type="password" value="" /><img src=""/>
+					<p></p>
+					</label>
+					<label class="checkma"><span class="info">验证码：</span>
+					<input name="checkipt" type="text" value="" /><img src=""/>
+					<p></p>
+					</label>
+					<button id="regbtn" type="submit" >免费注册<p></p></button>
+					
+				</form>
+				<div class="regright">
+					<div  class="regtip">
+						<p>已有账号了，直接登录</p>
+						<a class="tologin" href="login.html">登录</a>
+						<a class="forgetpwd" href="xunzhao.html" target="_blank">忘记密码？</a>
+					</div>
+					<div class="collection">
+						<p>还可以使用合作网站账号登录  村村通商城 </p>
+						<a id="QQ" href="https://graph.qq.com/oauth/show?which=Login&display=pc&client_id=100224570&redirect_uri=http://www.gdcct.com/usercenter/qqCallBack.jspx&response_type=code&state=cad33bc2acdfbd9f8dca677152882130&scope=get_user_info,add_topic,add_one_blog,add_album,upload_pic,list_album,add_share,check_page_fans,add_t,add_pic_t,del_t,get_repost_list,get_info,get_other_info,get_fanslist,get_idollist,add_idol,del_ido,get_tenpay_addr"></a>
+						<a id="Wechat" href=""></a>
+						<a id="alipay" href="https://auth.alipay.com/login/express.htm?goto=https%3A%2F%2Fmemberexprod.alipay.com%3A443%2Fauthorize%2FuserAuthQuickLoginAction.htm%3Fe_i_i_d%3Dd264df4bf052cedc3c3386b9a6ce74d8"></a>
+						<a id="sinabo" href="https://api.weibo.com/oauth2/authorize?client_id=1832109743&redirect_uri=http://www.gdcct.com/usercenter/sinaWeiboCallBack.jspx&response_type=code"></a>
+						<a id="cmcc139" href="http://openlogin.mail.10086.cn/Web/OpenLogin.aspx?rnd=636413506492078054#&randomId=0.00860855993539511"></a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<!--页面尾部-->
+		<div id="loadfooter"></div>
+	</body>
+</html>

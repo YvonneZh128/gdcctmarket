@@ -1,0 +1,150 @@
+/*
+模版
+<div style="position:absolute; top:0px; left:0px;display: none; z-index:900;">
+	<div class="mask"></div>
+	<div class="messagepop" style="display: block; z-index: 999;">
+		<div class="popbar">
+			<h2>${title}</h2>
+			<a style="cursor:pointer;"></a>
+		</div>
+		<div class="popcontent">
+			<table border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+						<iframe id="${id}_iframeContent" name="${id}_iframeContent" frameborder="0" scrolling="auto" width="${width}" height="${height}" src="${url}"></iframe>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+
+构建一个节点
+var cityNode = $('<div />');
+$('body').append(cityNode);
+cityNode.popWindow({
+	id		: "city",
+	top 	: "200",
+	width 	: "500",
+	height 	: "280",
+	title 	: "请选择您要进入的站点：",
+	url		: url
+});
+ */
+
+;(function($){
+	$.fn.extend({
+		"popWindow" : function(paramJson){
+			
+			/* 基础属性 */
+			var id = paramJson.id;
+			var url = paramJson.url == null ? "http://www.gdcct.com/blank.html" : paramJson.url;
+			var width = paramJson.width == null ? 400 : paramJson.width;
+			var height = paramJson.height == null ? 300 : paramJson.height;
+			var title = paramJson.title == null ? "http://www.gdcct.com" : paramJson.title;
+			var panel = this;
+			var div2 = $('<div />');
+			var iframe = $('<iframe />');
+			var checkBg_handler;
+			
+			$(this).each(function(){
+				
+				function initFun(){
+					createPanel();
+					changeUrl();
+					checkBg();
+				}
+				
+				initFun();
+				
+				//返回当前页面高度
+				function pageHeight(){ 
+					return document.body.clientHeight;
+				}
+				
+				//返回当前页面宽度 
+				function pageWidth(){ 
+					return document.body.clientWidth;
+				}
+				
+				//构建
+				function createPanel(){
+					/* 构建弹窗 */
+					var div1 = $('<div />');
+					div1.css('z-index', '900');
+					div2.addClass("mask"); 
+					
+					var div3 = $('<div />');
+					div3.addClass("messagepop");
+					div3.css('display', 'block');
+					div3.css('z-index', '9999');
+					div3.css('margin-left', 0 - (parseInt(width)  + 22 )/2);
+					div3.css('margin-top', 0 - (parseInt(height) + 43)/2);
+					div3.css('width', parseInt(width) + 22 + "px");
+					div3.css('height', parseInt(height) + 43 + "px");
+					
+					var div4 = $('<div />');
+					div4.addClass("popbar");
+					var div4_h2 = $('<h2 />');
+					div4_h2.html(title);
+					var div4_a = $('<a />');
+					div4_a.click(function(){
+						window.clearInterval(checkBg_handler);
+						panel.remove();
+						if(paramJson.fun != null){
+							paramJson.fun();
+						}
+					});
+					
+					div4.append(div4_h2);
+					div4.append(div4_a);
+					
+					var div5 = $('<div />');
+					div5.addClass('popcontent');
+					var table = $('<table />');
+					table.attr({'border':'0', 'cellpadding':'0', 'cellspacing': '0'});
+					var table_tr = $('<tr />');
+					var table_tr_td = $('<td />');
+					iframe.attr('id', id + "_iframeContent");
+					iframe.attr('name', id + "_iframeContent");
+					iframe.attr('frameborder', 0);
+					iframe.attr('scrolling', 'auto');
+					iframe.attr('width', width);
+					iframe.attr('height', height);
+					iframe.css('background', 'url(http://res.gdcct.com/images/usercenter/ico_sina_loading.gif) 50% 50% no-repeat');
+					//iframe.attr('src', 'http://www.gdcct.com/blank.html');
+					table_tr_td.append(iframe);
+					table_tr.append(table_tr_td);
+					table.append(table_tr);
+					div5.append(table);
+					
+					div3.append(div4);
+					div3.append(div5);
+					
+					div1.append(div2);
+					div1.append(div3);
+					panel.append(div1);
+					div2.css('width', pageWidth());
+					div2.css('height', pageHeight());
+				}
+				
+				//加载IFRAME内容
+				function changeUrl(){
+					//window.setTimeout(function(){
+						iframe.attr('src', url);
+					//}, 500);
+				}
+				
+				//检查背景
+				function checkBg(){
+					checkBg_handler = window.setInterval(function(){
+						div2.css('width', pageWidth());
+						div2.css('height', pageHeight());
+					}, 500)
+				}
+			});
+			
+			return $(this);
+		}
+	});
+})(jQuery);

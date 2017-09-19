@@ -1,0 +1,617 @@
+
+@import "baseon";
+@import "mixin-base";
+
+$wt:1200px;
+$ht:31px;
+$topcolor:#F6F6F6,#fff,#999,#ff3c3c,#666,#f00;
+$display:none,block,inline-block,inline;
+$position:absolute,relative,fixed;
+$overflow:hidden,none;
+
+//buycar  click  to red 
+.head{
+    height:$ht;
+    width:100%;
+    background:nth($topcolor,1);
+    font-size:12px;
+    position: nth($position,2);
+    //head left menu
+    .topleft{
+        color:nth($topcolor,5);
+        width:248px;
+        margin-top:8px;
+        float: left;
+        a{
+            display:nth($display,3);
+            color:nth($topcolor,5);
+            span{
+                color:nth($topcolor,6);
+            }
+            &:hover{
+                color:nth($topcolor,6);
+                cursor: pointer;
+            }
+        }
+        
+    }
+    //head right topmenu 
+    .topright{
+        color:nth($topcolor,3);
+        float:right;
+        height:31px;
+       .buy{
+            
+            position: nth($position,1);
+            top:8px;
+            right:350px;
+            color:nth($topcolor,3);
+            img{
+                border:0;
+                width:14px;
+                height:14px;
+                margin-right:5px;
+                background: url("../img/cct_ui.png") no-repeat 0 0;
+                
+            }
+            span{
+                color:nth($topcolor,6);
+            }
+        }
+        .buy:hover{
+            color:nth($topcolor,6);
+        }
+        .topul{
+           display: nth($display,3);
+           margin:8px;
+           li{
+               float:left;
+               a{
+                   color:nth($topcolor,3);
+                   margin: 10px 5px;
+                   padding:0 0 0 10px;
+                   border-left:1px solid #e1dde1;
+                   
+               }
+               a:hover{
+                   color:nth($topcolor,6);
+               }
+               
+                
+           }
+        }
+    }
+    
+}
+// the middle-heart of the html;
+.heart{
+    width:$wt;
+    margin:0 auto;
+}
+
+
+
+//logo menu  part
+$lgw:180px,512px,56px,80px;
+$lgh:156px,80px,36px;
+$left:12px,260px;
+$top:20px,30px,9px;
+$lgcolor:#09c762,#ff5500,#e6e6e6,#999,#666,#333,#fff;
+
+.logomenu{
+    width:100%;
+    height:nth($lgh,1);
+    position:nth($position,2);
+    display: nth($display,3);
+    border-bottom: 2px solid nth($lgcolor,1);
+    .logo{
+        width:nth($lgw,1);
+        height:nth($lgh,2);
+        margin-top:nth($top,1);
+    }
+    .search{
+        width:nth($lgw,2);
+        margin-left:nth($left,2);
+        display: nth($display,3);
+        .searchipt{
+            width:nth($lgw,2);
+            display: nth($display,3);
+            margin-top:nth($top,2);
+            border:2px solid nth($lgcolor,1);
+            position: nth($position,2);
+            
+            .searchtxt{
+                width:366px;
+                height:nth($lgh,3);
+                padding-left:10px;
+                position: nth($position,1);
+                top:0;
+                left:nth($lgw,3);
+                border:0;
+                color:nth($lgcolor,4);
+            }
+            .searchbtn{
+                width:nth($lgw,4);
+                height:100%;
+                background:nth($lgcolor,1);
+                border:0;
+                font-size:14px;
+                color:nth($lgcolor,7);
+                cursor: pointer;
+                position:nth($position,1);
+                top:0;
+                right:0;
+            }
+        }
+        .searchul{
+            float: left;
+            display: nth($display,3);
+            margin-top:nth($top,3);
+            li{
+                float: left;
+                margin-right:11px;
+            }
+            a:hover{
+                text-decoration: underline;
+                color:nth($lgcolor,2);
+        
+            }
+        }
+    }
+    span{
+        position:relative;
+        .logoEWM{
+            width:120px;
+            height:86px;
+            display: nth($display,3);
+            margin-top:20px;
+            margin-left:114px;
+        }
+        .closeEWM{
+            width:16px;
+            height:16px;
+            position:absolute;
+            top:-22px;
+            right:0;
+            
+        }
+    }
+    
+}
+#sel{
+    width:55px;
+    height:nth($lgh,3);
+    border-right:1px solid nth($lgcolor,3);
+    position:relative;
+    dt{
+        position:relative;
+    }
+    dt>img{
+        width:7px;
+        height:4px;
+        position:absolute;
+        top:16px;
+        right:9px;
+        background:url(../img/cct_ui.png) no-repeat -15px 0;
+    }
+    
+    a{
+        padding-left:11px;
+        line-height:nth($lgh,3);
+        display: block;
+        cursor: pointer;
+        color:nth($lgcolor,5);
+    }
+    dd{
+        position:absolute;
+        background:#FFF;
+        border:{
+            left:1px solid nth($lgcolor,3);
+            right:1px solid nth($lgcolor,3);
+        }
+        display: none;
+    }
+   
+    .market{
+       
+        top:36px;
+        a{
+            padding:0 14.5px;
+        }
+        
+    }
+    .news{
+        
+        top:72px;
+        border-bottom:1px solid nth($lgcolor,3);
+        a{
+            padding:0 14.5px;
+        }
+    }
+    
+}
+//mainMenu  part
+$mmw:210px;
+$mmh:36px;
+.menul{
+    margin-top:14px;
+    li{
+        float: left;
+        text-align: center;
+        padding:0 10px;
+        a{
+            display: nth($display,2);
+            line-height:34px;
+            height:30px;
+            color:nth($lgcolor,6);
+            font-weight: bolder;
+            padding:2px 15px;
+            &:hover{
+                background:#f9f9f9;
+                color:#ff4000;
+            }
+        }
+    
+    }
+    
+}
+.MMleft{
+    float: left;
+    margin-top:14px;
+}
+.allProd{
+    width:nth($mmw,1);
+    height:nth($mmh,1);
+    background:nth($lgcolor,1);
+    line-height:36px;
+    color:#FFFFFF;
+    font-size: 14px;
+    text-align: center;
+    position:nth($position,2);
+    .alldown{
+        width:9px;
+        height:6px;
+        position:nth($position,1);
+        top:15px;
+        right:15px;
+        background: url("../img/cct_ui.png") no-repeat -23px 0;
+    
+    }
+   
+}
+
+.downmenu{
+    width:210px;
+    height:328px;
+    background:rgba(30,146,70,0.8);
+    display: block;
+    position:absolute;
+    
+    z-index:41;
+    li{
+        height:41px;
+        position :relative;
+        &:hover{
+            background:rgb(0,113,48);
+        }
+        .next{
+            width:8px;
+            height:13px;
+            
+            position:absolute;
+            top:12px;
+            right:17px;
+            background:url("../img/cct_ui.png") no-repeat -60px 0;;
+        }
+        .fuwupt{
+            width:210px;
+            height:72px;
+            position:absolute;
+            bottom:-72px;
+            left:0;
+        }
+    }
+}
+
+//all product menu No.1 menu
+.menuone {
+    position:absolute;
+    text-align: left;
+    zoom:1;
+    z-index: 999;
+    .iconfont{
+        width:16px;
+        margin:{
+            left:16px;
+            right:30px;
+            top:10px;
+        }
+        background-image:url("../img/cct_c_icon.png");
+        
+    }
+    
+    a{
+        color:#fff;
+    }
+    
+    
+}
+.cate1>img{
+    height: 12px;
+    background-position-y: -2px;
+}
+.cate2>img{
+    height:13px;
+    background-position-y: -17px;
+}
+.cate3>img{
+    height:14px;
+    background-position-y: -33px;
+}
+.cate4>img{
+    height:14px;
+    background-position-y: -49px;
+}
+.cate5>img{
+    height:16px;
+    background-position-y: -64px;
+}
+.cate6>img{
+    height:14px;
+    background-position-y: -82px;
+}
+.cate7>img{
+    height:15px;
+    background-position-y:-97px;
+}
+.cate8>img{
+    height:12px;
+    background-position-y: -114px;
+}
+
+//menu No.2  caidna 
+.menutwo{
+    width:398px;
+    height:399px;
+    background:red;
+    display:none;
+    position:absolute;
+    left:200px;
+    @include css3("box-shadow",0 0 5px rgba(0, 0, 0, 0.3));
+    border-top:0;
+    @include css3("transition",transform 0.5s);
+    z-index:12;
+    .act{
+        position:absolute;
+        bottom:0;
+        right:0;
+        z-index:48;
+        
+    }
+    dl{
+        text-align: left;
+        width:360px;
+        position:absolute;
+        top:10px;
+        left:19px;
+        z-index:49;
+    }
+    dt{
+        border-bottom:#e5e5e5 1px solid;
+        font-weight:bold;
+        height:30px;
+        line-height:30px;
+        text-indent:5px;
+    }
+    dd {
+        line-height: 24px;
+        margin-top: 5px;
+        p{
+            float: left;
+            display: inline;
+            width: 118px;
+            padding: 0 1px;
+            margin-top: 5px;  
+            a{
+                padding: 3px 3px 4px 4px;
+                white-space: nowrap; 
+                &:hover{
+                    background: #09c762;
+                    color: #fff;
+                    text-decoration: none;
+                }
+            } 
+        }
+    }
+    
+}
+
+
+//the first one show menu;
+
+.footer{
+    width:100%;
+    background:#F8F8F8;
+}
+.footertop{
+    background:#09C762;
+    .detailimg { 
+        height:90px;
+        width:1206px;
+        margin:0 auto 20px;
+        li{
+            float:left;
+        }
+    }
+}
+%ahover{
+    color:#FF4000;
+    text-decoration: underline;
+}
+.footdetailmid{
+    width:100%;
+    height:187px;
+    background:#F8F8F8;
+    margin-bottom:20px;
+    dl{
+        width:190px;
+        height:174px;
+        float:left;
+        dt{
+            color:#666;
+            line-height:30px;
+            font-size:16px;
+        }
+        dd{
+            a{
+                font-size:12px;
+                line-height:24px;
+                display: block;
+                &:hover{
+                    @extend %ahover;
+                }   
+            }
+        }
+    }
+    #ftcontact{
+        width:250px;
+//      height:187px;
+        strong{
+            color:#ff4040;
+            font-size:24px;
+        }
+        p{
+            color:#666;
+            line-height:24px;
+        }
+    }
+    
+    
+}
+
+.footmenu{
+    height:60px;
+    margin:20px 0;
+    display:none;
+    position: relative;
+    p{
+        line-height:27px;
+        color:#999;
+        position:absolute;
+        top:0;
+        right:0;
+        
+    }
+    .footmenul{
+        height:28px;
+        border-bottom:1px solid #E5E5E5;
+       .notone{
+           color: #999;
+           line-height: 24px;;
+            font:{
+                size:12px ;
+                weight:bold;
+                
+            }
+        }
+       
+        li{
+            float:left;
+            width:71px;
+            padding:4px 0;
+        }
+        a{
+            color: #999;
+        }
+        .foot-one{
+            text-align: center;
+            position: relative;
+        }
+        .onhover{
+            border:1px solid #E5E5E5;
+            padding:7px 10px;
+            line-height:24px;
+            border-bottom:0;
+            font-weight: bold;
+            background:#f8f8f8;
+            margin-top:-1px;
+            position: relative;
+            top:-5px;
+        }
+        .thef01{
+            .foot-sed{
+                display: block;
+            }
+        }
+        .foot-one>a{
+            border-right:1px solid #E5E5E5;
+            display: inline-block;
+            width:51px;
+//          height:14px;
+            margin-top:5px;
+            padding:0 10px;
+            
+        }
+        
+       
+        
+    }
+}
+
+
+.footone-children{
+    height:32px;
+    .foot-sed{
+        padding:10px 0;
+        text-align: left;
+        display: none;
+        li{
+            margin-right:12px;
+            line-height:22px;
+            float:left;
+            a{
+                color:#999;
+                &:hover{
+                    @extend %ahover;
+                }
+            }
+        }
+    }
+}
+//the first one show menu;
+#endfl-one{
+    display: block;
+}
+
+.end{
+    width:100%;
+//  height:104px;
+    padding:30px 0;
+    background:#fff;
+    text-align: center;
+     a{
+            color:#999;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    div{
+        margin:0 auto;
+        a{
+            margin:0 6px; 
+            
+        }
+    }
+    .endinstro{
+        line-height:26px;
+        color:#999;
+        margin:0 auto;
+       
+    }
+    .endimg{
+       margin-top:20px;
+        img{
+            margin:0 10px;
+        }
+    }
+}

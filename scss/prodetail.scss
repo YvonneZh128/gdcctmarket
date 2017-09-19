@@ -1,0 +1,165 @@
+@import "baseon";
+@import "mixin-base";
+
+.prodheart{
+    width:1206px;
+    margin:0 auto;
+    position: relative;
+    
+}
+.prodetail{
+    width:100%;
+    margin-top:-16px;
+    position: relative;
+    margin-bottom:20px;
+}
+
+%ahover{
+    color:#FF4000;
+    text-decoration: underline;
+}
+.prodlocation{
+    margin:10px 0;
+    a{
+        line-height:20px;
+        &:hover{
+           @extend %ahover; 
+        }
+    }
+}
+
+.detailimg{
+    width:360px;
+    height:482px;
+    position:relative;
+    dt{
+        width:320px;
+        height:320px;
+        padding:19px;
+        border:1px solid #eee;
+        position:relative;
+    }
+}
+#smallImg{
+    width:320px;
+    height: 320px;
+    position:absolute;
+    top:19px;
+    left:19px;
+    background:url(../img/prodimg/small01.jpg) no-repeat;
+   #smallCursor{
+       width:128px;
+       height:128px;
+       position:absolute;
+       top:0;
+       left:0;
+       display:none;
+       background:rgba(200,198,255,0.8);
+   } 
+}
+#bigCursor{
+    width:320px;
+    height:320px;
+    border:1px solid #eee;
+    position: absolute;
+    top:0;
+    left:380px;
+    overflow: hidden;
+    display: none;
+    #bigImg{
+        width:800px;
+        height:800px;
+        outline: none;
+        position: absolute;
+        top:0px;
+        left:0px;
+        
+    }
+}
+
+.prodimglist{
+    width:360px;
+    height:60px;
+    margin-top:15px;
+    position: relative;
+    .btnicon{
+        display: block;
+        width:8px;
+        height:13px;
+        background:url(../img/cct_ui.png) no-repeat;   
+    }
+    .prevStop{
+        position: absolute;
+        top:20px;
+//      right:348px;
+        i{
+            background-position-x:-51px;
+        }
+    }
+    .nextStop{
+        display: block;
+        
+        position: absolute;
+        top:20px;
+        left:348px;
+       i{
+           background-position-x:-60px; 
+       }
+    }
+    ul{
+        width:324px;
+        height:60px;
+        margin-left:18px;
+        li{
+            float:left;
+            margin-right:6px;
+            border:2px solid #EEEEEE;
+            
+        }
+    }
+}
+.hover{
+    border-color:#ff7f00;
+}
+
+
+.share2{
+    color:#666;
+    margin-top:20px;
+    span{
+        line-height:27px;
+    }
+    .picnic{
+        
+    }
+    a{
+        display: inline-block;
+        margin-right:5px;
+        width:16px;
+        height:16px;
+        background:url(../img/isicon.png) no-repeat;
+        background-position-x:-4px;
+    }
+    
+}
+
+.pd-onbuy{
+    width:580px;
+    height:381px;
+    margin-right:30px;
+    background:#eee;
+    .pd-name{
+        font-size:20px;
+        line-height:35px;
+        padding-bottom:5px;
+        border-bototm:1px solid #eee;
+          
+    }
+    .pdinfo-summary{
+        dd{
+            font-size:20px;
+            color:#FF4000;
+            font-weight:bold;
+        }
+    }
+}

@@ -1,0 +1,352 @@
+
+@import "baseon";
+@import "mixin-base";
+
+.regbody{
+    width:940px;
+    height:540px;
+    margin:50px auto;
+}
+
+.middle{
+    height:417px;
+    background: #F7F7F7;
+    border:1px solid #dedede;
+    margin:0 auto;
+    padding:25px 30px 0;
+    .reg-hd{
+        width:878px;
+        h3{
+            font-size:14px;
+            color:#333;
+            font-weight:bold;
+            padding-bottom:5px;
+            border-bottom:1px solid #e5e5e5;
+        }
+        border-bottom:1px solid #fff;
+    }
+    
+    
+}
+.regInfo{
+    padding:50px 0 15px 0;
+    width:500px;
+    display: inline-block;
+    label{
+        display:block;
+        height:52px;
+        img{
+            width:16px;
+            height:15px;
+            margin:{
+                top:8px;
+                left:10px;
+            }
+            background:url(../img/loginpop.gif) no-repeat 0 0;
+            visibility: hidden;
+        }
+        .info{
+            display: inline-block;
+            width:110px;
+            color:#333;
+            font-size:14px;
+            text-align: right;
+        }
+        input{
+            display: inline-block;
+            width:257px;
+            height:26px;
+            
+        }
+        .checkipt{
+            width:97px;
+        }
+        p{
+            color:red;
+            margin-left:112px;
+        }
+        .checkemail{
+            display:none;
+            width:260px;
+            border:1px solid #e5e5e5;
+            margin-left:114px;
+            position:relative;
+            background:#fff;
+            z-index: 999;
+            li{
+                color:#666666;
+                line-height:25px;
+                &:hover{
+                    background:#e5e5e5;
+                }
+            }
+        }
+    }
+    button{
+        width:220px;
+        height:30px;
+        border:0;
+        position:relative;
+        background: #ff6a00 ;
+        color:#fff;
+        margin-left:115px;
+        p{
+            width:5px;
+            height:9px;
+            position: absolute;
+            right:20px;
+            top:10px;   
+            background:url(../img/loginpop.gif) no-repeat -145px -34px;
+        }
+            
+    }
+}
+
+.regright{
+    width:300px;
+    height:250px;
+    margin:25px 0;
+    padding:90px 0 0 60px;
+    float:right;
+    border-left:1px solid #E5E5E5;
+    .regtip{
+        p{
+            margin-bottom:10px;
+        }
+        padding-bottom:15px;
+        border-bottom:1px solid #e5e5e5;
+    }
+    .tologin{
+        display: inline-block;
+        width:70px;
+        height:25px;
+        margin-right:10px;
+        background:#009900;
+        color:#fff;
+        line-height:25px;
+        text-align:center; 
+        &:hover{
+            background:#09C762;
+            
+        }
+    }
+    .forgetpwd{
+        color:#06c;
+        
+        &:hover{
+            text-decoration: underline;
+            color:#FF4000;
+            
+        }
+    }
+    .collection{
+        width:300px;
+        border-top:1px solid #fff;
+        p{
+            padding-top:13px;
+            margin-bottom:20px;
+        }
+        
+        a{
+            display: inline-block;
+            width:30px;
+            height:30px;
+            margin-right:5px;
+            background:url(../img/loginPop.png) no-repeat;
+        }
+        
+    }
+}
+#QQ{
+    background-position-x: 0;
+}
+#Wechat{
+    background-position-x: -35px;
+    
+}
+#alipay{
+    background-position-x: -70px;
+}
+#sinabo{
+    background-position-x: -105px;
+    
+}
+#cmcc139{
+    background-position-x: -140px;
+    
+}
+//login 部分
+.loginbody{
+    width:100%;
+    height:514px;
+    .loginmid{
+        margin:0 auto;
+        width:940px;
+        position: relative;
+        
+    }
+}
+
+
+.loginleft{
+    width:343px;
+    height:387px;
+    padding:25px 30px 0;
+    margin:50px 0;
+    border:1px solid #E5E5E5;
+    background:#F7F7F7;
+    h3{
+        color:#666;
+        font-size:16px;
+        font-weight:bold;
+        line-height:25px;
+        border-bottom:1px solid #DEDEDE;
+    }
+    .loginInfo{
+        width:100%;
+        padding-top:30px;
+        margin:{
+            right:15px;
+        }
+        border-top:1px solid #fff;
+        border-bottom:1px solid #dedede;
+    }
+    label{
+        display: block;
+        height:48px;
+        span{
+            text-align: right;
+            display: inline-block;
+            font-size:14px;
+            color:#333;
+            width:56px;
+            line-height:26px;
+        }
+        input{
+            width:207px;
+            line-height: 26px;
+            padding-left:3px;
+            border:1px solid #BFBFBF;
+            
+        }
+        p{
+            color:red;
+            margin-left:56px;
+            line-height:22px;
+        }
+    }
+    
+    .pwdinline{
+        a{
+           color:#0066CC;
+           &:hover{
+               cursor:pointer;
+               text-decoration: underline;
+           }     
+        }
+    }
+}
+.loginsubmit{
+    width:68px;
+    height:28px;
+    padding:1px 6px;
+    margin-right:20px;
+}
+.loginright{
+    
+    display: block;
+    width:500px;
+    height:415px;
+    float:right;
+    position:absolute;
+    top:0;
+    right:0;
+    
+}
+.autologin{
+    margin:{
+        left:56px;
+        top:15px;
+    }
+    em{
+		padding:5px;
+
+        
+    }
+    .logintip{
+        color:#FF4040;
+        margin-top:4px;
+        height:22px;
+        border:1px solid #FF2A00;
+        background:#F2DEDE;
+        padding-left:10px;
+        visibility: hidden;
+    }
+}
+
+.btns{
+    margin:{
+        top:10px;
+        left:56px;
+        bottom:20px;
+        
+    }
+    font-weight:bold;
+    
+    .loginsubmit{
+        display: inline-block;
+        width:68px;
+        height:30px;
+        padding:1px 6px;
+        background:#090;
+        border:0;
+        color:#fff;
+        cursor:pointer;
+        &:hover{
+            background:#00b300;
+        }
+    }
+    .login2reg{
+        width:88px;
+        text-align: center;
+        line-height:28px;
+        padding:1px 6px;
+        background:#ff8f40;
+        color:#fff;
+        position: relative;
+        display: inline-block;
+        &:hover{
+            background:#FF7F00;
+        }
+        span{
+            display: inline-block;
+            width:5px;
+            height:9px;
+
+            position: absolute;
+            top:12px;
+            right:10px;
+            background:url(../img/loginpop.gif) no-repeat -145px -34px;
+        }
+        
+    }
+}
+
+.loginstyle{
+    border-top:1px solid #fff;
+    p{
+        margin-top:10px ;
+        font-size: 14px;
+        color:#333;
+        margin-bottom:20px;
+    }
+    a{
+        display: inline-block;
+        width:30px;
+        height:30px;
+        margin-right:5px;
+        background:url(../img/loginPop.png) no-repeat;
+    }
+    
+    
+}

@@ -1,0 +1,417 @@
+body, p, h1, h2, h3, h4, h5, h6, ul, dl, dd, td, input, fieldset, textarea, option {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+img {
+  border: none;
+  vertical-align: top;
+}
+
+a, input {
+  outline: none;
+}
+
+h1, h2, h3, h4, h5, h6, b, strong {
+  font-weight: 100;
+}
+
+i, em {
+  font-style: normal;
+}
+
+body {
+  font: 12px "microsoft yahei";
+}
+
+.clear {
+  zoom: 1;
+}
+
+.clear:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.banner {
+  width: 100%;
+  height: 400px;
+  margin-top: -14px;
+  position: relative;
+}
+.banner .swiper-slide {
+  width: 100%;
+  height: 400px;
+}
+.banner .swiper-slide a {
+  width: 100%;
+  height: 400px;
+  display: inline-block;
+}
+.banner .swiper-pagination span {
+  background: #09c762;
+  display: inline-block;
+  width: 30px;
+  height: 10px;
+  border-radius: 0;
+}
+.banner .bannerul {
+  position: absolute;
+  top: 0;
+  right: 29px;
+  z-index: 999;
+}
+.banner .bannerul li {
+  width: 240px;
+  height: 200px;
+  background: red;
+}
+
+.tjmodel {
+  width: 100%;
+  height: 165px;
+  margin-top: 25px;
+}
+.tjmodel .tjul li {
+  overflow: hidden;
+  width: 165px;
+  height: 165px;
+  float: left;
+}
+.tjmodel .tjul .tjactive {
+  position: relative;
+  height: 165px;
+  width: 290px;
+}
+.tjmodel .tjul .tjactive img {
+  position: absolute;
+  left: -165px;
+}
+.tjmodel .gonGao {
+  width: 233px;
+  height: 165px;
+  float: right;
+}
+.tjmodel .gonGao h2 {
+  font-size: 16px;
+  color: #333;
+  padding: 6px;
+  border-bottom: 1px solid #ccc;
+}
+.tjmodel .gonGao ul {
+  padding-left: 5px;
+}
+.tjmodel .gonGao ul li {
+  margin-top: 10px;
+}
+.tjmodel .gonGao ul li a {
+  width: 227px;
+  height: 16px;
+  overflow: hidden;
+  display: block;
+}
+.tjmodel .gonGao ul li a:hover {
+  color: #FF4000;
+  text-decoration: underline;
+}
+.tjmodel .gonGao ul li .a-orange {
+  color: #FF4000;
+}
+
+.floor-hd ul li a:hover, .fl-catalogue .tags-list dd a:hover, .fl-botpro li .p-name a:hover, .markethome .mhpanel .panel-food .fodmenucont a:hover {
+  color: #FF4000;
+  text-decoration: underline;
+}
+
+.firstFloor {
+  width: 100%;
+  height: 587px;
+  margin-top: 18px;
+  position: relative;
+}
+
+.floor-hd {
+  height: 40px;
+  border-bottom: #eee 1px solid;
+}
+.floor-hd h2 {
+  float: left;
+  font-size: 20px;
+  color: #666;
+  margin-top: 8px;
+}
+.floor-hd ul {
+  float: right;
+  margin-top: 18px;
+}
+.floor-hd ul li {
+  float: left;
+  font-size: 12px;
+}
+.floor-hd ul li a {
+  color: #666;
+  padding: 0 10px;
+  border-right: #eee 1px solid;
+}
+
+.fl-catalogue {
+  width: 210px;
+  height: 546px;
+  background: #FAFAFA;
+}
+.fl-catalogue .act {
+  margin-left: -30px;
+  z-index: 999;
+}
+.fl-catalogue .tags-bd {
+  padding: 0 10px;
+  border-bottom: 1px solid #eee;
+}
+.fl-catalogue .tags-list {
+  width: 190px;
+  padding-top: 10px;
+  line-height: 20px;
+  border-bottom: #eee 1px solid;
+}
+.fl-catalogue .tags-list dt {
+  font-weight: bold;
+}
+.fl-catalogue .tags-list dd {
+  height: 40px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+.fl-catalogue .tags-list dd a {
+  display: inline-block;
+  height: 20px;
+  margin-right: 12px;
+  line-height: 20px;
+}
+
+.btnon {
+  background: yellow;
+}
+
+.fl-top1pro {
+  position: absolute;
+  top: 41px;
+  margin-left: 210px;
+  float: right;
+}
+.fl-top1pro .floor-ba {
+  width: 396px;
+  height: 299px;
+  margin-left: 198px;
+  position: absolute;
+  border-bottom: 1px solid #eee;
+}
+.fl-top1pro .floor-ba .fl-babtn span {
+  border-radius: 0;
+  display: inline-block;
+  width: 30px;
+  height: 4px;
+  margin: 0 2px;
+  background: green;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.fl-top1pro .fl-on li {
+  width: 197px;
+  height: 300px;
+  position: relative;
+  float: left;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+}
+.fl-top1pro .fl-on li img {
+  width: 196px;
+  height: 299px;
+  position: absolute;
+  z-index: 1;
+}
+.fl-top1pro .fl-on .li-one {
+  margin-right: 395px;
+}
+.fl-top1pro .fl-on .li-two {
+  border-left: 1px solid #eee;
+}
+
+.fl-botpro {
+  margin-left: 210px;
+  position: absolute;
+  top: 341px;
+}
+.fl-botpro li {
+  height: 227px;
+  float: left;
+  padding-right: 23px;
+  padding-top: 20px;
+  padding-left: 24px;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.fl-botpro li .p-img {
+  width: 150px;
+  height: 150px;
+}
+.fl-botpro li .p-img:hover {
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+.fl-botpro li div {
+  width: 150px;
+  line-height: 18px;
+  overflow: hidden;
+}
+.fl-botpro li .p-name a {
+  display: inline-block;
+  height: 18px;
+  overflow: hidden;
+}
+.fl-botpro li .p-sale {
+  height: 18px;
+  overflow: hidden;
+  color: #FF4000;
+}
+.fl-botpro li .p-price strong {
+  font-size: 16px;
+  color: #e12228;
+}
+
+.markethome {
+  width: 100%;
+  height: 377px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.markethome h2 {
+  height: 40px;
+  font-size: 20px;
+  color: #666;
+}
+.markethome .mhpanel {
+  height: 320px;
+  border: 1px solid #eee;
+  padding: 0 20px 15px;
+  position: relative;
+}
+.markethome .mhpanel .panel-tj {
+  height: 315px;
+  width: 395px;
+  float: left;
+}
+.markethome .mhpanel .panel-tj .tj-title {
+  font-size: 16px;
+  color: #666;
+  line-height: 34px;
+}
+.markethome .mhpanel .panel-tj dd {
+  height: 280px;
+  overflow: hidden;
+}
+.markethome .mhpanel .panel-tj dd #mhbtn {
+  width: 66px;
+  height: 16px;
+  bottom: 26px;
+  background: #E6E6E6;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  border-radius: 10px;
+  margin-left: 172px;
+}
+.markethome .mhpanel .panel-tj dd #mhbtn span {
+  line-height: 16px;
+  background: #fff;
+  transform: scale(1.5);
+}
+.markethome .mhpanel .panel-tj dd #mhbtn .swiper-pagination-bullet-active {
+  background: #ff9500;
+}
+.markethome .mhpanel .hottab {
+  margin-left: 20px;
+}
+.markethome .mhpanel .panel-food {
+  width: 340px;
+  margin-left: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  float: right;
+}
+.markethome .mhpanel .panel-food .fodtitle {
+  font-size: 16px;
+  color: #666;
+  line-height: 34px;
+}
+.markethome .mhpanel .panel-food .fodmenuimg {
+  height: 120px;
+  float: left;
+  position: relative;
+}
+.markethome .mhpanel .panel-food .fodmenuimg .imga1 {
+  display: inline-block;
+  width: 164px;
+  height: 120px;
+}
+.markethome .mhpanel .panel-food .fodmenuimg .imga1 img {
+  width: 100%;
+  height: 100%;
+}
+.markethome .mhpanel .panel-food .fodmenuimg p {
+  width: 154px;
+  height: 23px;
+  padding: 0 5px;
+  position: relative;
+  bottom: 23px;
+  background: #000;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  text-align: center;
+}
+.markethome .mhpanel .panel-food .fodmenuimg p a {
+  color: #fff;
+  line-height: 23px;
+}
+.markethome .mhpanel .panel-food .fodmenucont {
+  float: right;
+}
+.markethome .mhpanel .panel-food .fodmenucont ul {
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+.markethome .mhpanel .panel-food .fodmenucont ul li {
+  height: 24px;
+  width: 166px;
+  overflow: hidden;
+}
+.markethome .mhpanel .panel-food .fodmenucont a {
+  color: #333;
+  line-height: 24px;
+}
+.markethome .mhpanel .panel-food dl {
+  height: 154px;
+}
+.markethome .mhpanel .panel-food .fodbtm {
+  margin-top: 6px;
+}

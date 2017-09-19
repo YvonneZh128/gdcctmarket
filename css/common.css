@@ -1,0 +1,602 @@
+body, p, h1, h2, h3, h4, h5, h6, ul, dl, dd, td, input, fieldset, textarea, option {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+img {
+  border: none;
+  vertical-align: top;
+}
+
+a, input {
+  outline: none;
+}
+
+h1, h2, h3, h4, h5, h6, b, strong {
+  font-weight: 100;
+}
+
+i, em {
+  font-style: normal;
+}
+
+body {
+  font: 12px "microsoft yahei";
+}
+
+.clear {
+  zoom: 1;
+}
+
+.clear:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.head {
+  height: 31px;
+  width: 100%;
+  background: #F6F6F6;
+  font-size: 12px;
+  position: relative;
+}
+.head .topleft {
+  color: #666;
+  width: 248px;
+  margin-top: 8px;
+  float: left;
+}
+.head .topleft a {
+  display: inline-block;
+  color: #666;
+}
+.head .topleft a span {
+  color: #f00;
+}
+.head .topleft a:hover {
+  color: #f00;
+  cursor: pointer;
+}
+.head .topright {
+  color: #999;
+  float: right;
+  height: 31px;
+}
+.head .topright .buy {
+  position: absolute;
+  top: 8px;
+  right: 350px;
+  color: #999;
+}
+.head .topright .buy img {
+  border: 0;
+  width: 14px;
+  height: 14px;
+  margin-right: 5px;
+  background: url("../img/cct_ui.png") no-repeat 0 0;
+}
+.head .topright .buy span {
+  color: #f00;
+}
+.head .topright .buy:hover {
+  color: #f00;
+}
+.head .topright .topul {
+  display: inline-block;
+  margin: 8px;
+}
+.head .topright .topul li {
+  float: left;
+}
+.head .topright .topul li a {
+  color: #999;
+  margin: 10px 5px;
+  padding: 0 0 0 10px;
+  border-left: 1px solid #e1dde1;
+}
+.head .topright .topul li a:hover {
+  color: #f00;
+}
+
+.heart {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.logomenu {
+  width: 100%;
+  height: 156px;
+  position: relative;
+  display: inline-block;
+  border-bottom: 2px solid #09c762;
+}
+.logomenu .logo {
+  width: 180px;
+  height: 80px;
+  margin-top: 20px;
+}
+.logomenu .search {
+  width: 512px;
+  margin-left: 260px;
+  display: inline-block;
+}
+.logomenu .search .searchipt {
+  width: 512px;
+  display: inline-block;
+  margin-top: 30px;
+  border: 2px solid #09c762;
+  position: relative;
+}
+.logomenu .search .searchipt .searchtxt {
+  width: 366px;
+  height: 36px;
+  padding-left: 10px;
+  position: absolute;
+  top: 0;
+  left: 56px;
+  border: 0;
+  color: #999;
+}
+.logomenu .search .searchipt .searchbtn {
+  width: 80px;
+  height: 100%;
+  background: #09c762;
+  border: 0;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.logomenu .search .searchul {
+  float: left;
+  display: inline-block;
+  margin-top: 9px;
+}
+.logomenu .search .searchul li {
+  float: left;
+  margin-right: 11px;
+}
+.logomenu .search .searchul a:hover {
+  text-decoration: underline;
+  color: #ff5500;
+}
+.logomenu span {
+  position: relative;
+}
+.logomenu span .logoEWM {
+  width: 120px;
+  height: 86px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 114px;
+}
+.logomenu span .closeEWM {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: -22px;
+  right: 0;
+}
+
+#sel {
+  width: 55px;
+  height: 36px;
+  border-right: 1px solid #e6e6e6;
+  position: relative;
+}
+#sel dt {
+  position: relative;
+}
+#sel dt > img {
+  width: 7px;
+  height: 4px;
+  position: absolute;
+  top: 16px;
+  right: 9px;
+  background: url(../img/cct_ui.png) no-repeat -15px 0;
+}
+#sel a {
+  padding-left: 11px;
+  line-height: 36px;
+  display: block;
+  cursor: pointer;
+  color: #666;
+}
+#sel dd {
+  position: absolute;
+  background: #FFF;
+  border-left: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6;
+  display: none;
+}
+#sel .market {
+  top: 36px;
+}
+#sel .market a {
+  padding: 0 14.5px;
+}
+#sel .news {
+  top: 72px;
+  border-bottom: 1px solid #e6e6e6;
+}
+#sel .news a {
+  padding: 0 14.5px;
+}
+
+.menul {
+  margin-top: 14px;
+}
+.menul li {
+  float: left;
+  text-align: center;
+  padding: 0 10px;
+}
+.menul li a {
+  display: block;
+  line-height: 34px;
+  height: 30px;
+  color: #333;
+  font-weight: bolder;
+  padding: 2px 15px;
+}
+.menul li a:hover {
+  background: #f9f9f9;
+  color: #ff4000;
+}
+
+.MMleft {
+  float: left;
+  margin-top: 14px;
+}
+
+.allProd {
+  width: 210px;
+  height: 36px;
+  background: #09c762;
+  line-height: 36px;
+  color: #FFFFFF;
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+}
+.allProd .alldown {
+  width: 9px;
+  height: 6px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: url("../img/cct_ui.png") no-repeat -23px 0;
+}
+
+.downmenu {
+  width: 210px;
+  height: 328px;
+  background: rgba(30, 146, 70, 0.8);
+  display: block;
+  position: absolute;
+  z-index: 41;
+}
+.downmenu li {
+  height: 41px;
+  position: relative;
+}
+.downmenu li:hover {
+  background: #007130;
+}
+.downmenu li .next {
+  width: 8px;
+  height: 13px;
+  position: absolute;
+  top: 12px;
+  right: 17px;
+  background: url("../img/cct_ui.png") no-repeat -60px 0;
+}
+.downmenu li .fuwupt {
+  width: 210px;
+  height: 72px;
+  position: absolute;
+  bottom: -72px;
+  left: 0;
+}
+
+.menuone {
+  position: absolute;
+  text-align: left;
+  zoom: 1;
+  z-index: 999;
+}
+.menuone .iconfont {
+  width: 16px;
+  margin-left: 16px;
+  margin-right: 30px;
+  margin-top: 10px;
+  background-image: url("../img/cct_c_icon.png");
+}
+.menuone a {
+  color: #fff;
+}
+
+.cate1 > img {
+  height: 12px;
+  background-position-y: -2px;
+}
+
+.cate2 > img {
+  height: 13px;
+  background-position-y: -17px;
+}
+
+.cate3 > img {
+  height: 14px;
+  background-position-y: -33px;
+}
+
+.cate4 > img {
+  height: 14px;
+  background-position-y: -49px;
+}
+
+.cate5 > img {
+  height: 16px;
+  background-position-y: -64px;
+}
+
+.cate6 > img {
+  height: 14px;
+  background-position-y: -82px;
+}
+
+.cate7 > img {
+  height: 15px;
+  background-position-y: -97px;
+}
+
+.cate8 > img {
+  height: 12px;
+  background-position-y: -114px;
+}
+
+.menutwo {
+  width: 398px;
+  height: 399px;
+  background: red;
+  display: none;
+  position: absolute;
+  left: 200px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-top: 0;
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -ms-transition: transform 0.5s;
+  z-index: 12;
+}
+.menutwo .act {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 48;
+}
+.menutwo dl {
+  text-align: left;
+  width: 360px;
+  position: absolute;
+  top: 10px;
+  left: 19px;
+  z-index: 49;
+}
+.menutwo dt {
+  border-bottom: #e5e5e5 1px solid;
+  font-weight: bold;
+  height: 30px;
+  line-height: 30px;
+  text-indent: 5px;
+}
+.menutwo dd {
+  line-height: 24px;
+  margin-top: 5px;
+}
+.menutwo dd p {
+  float: left;
+  display: inline;
+  width: 118px;
+  padding: 0 1px;
+  margin-top: 5px;
+}
+.menutwo dd p a {
+  padding: 3px 3px 4px 4px;
+  white-space: nowrap;
+}
+.menutwo dd p a:hover {
+  background: #09c762;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer {
+  width: 100%;
+  background: #F8F8F8;
+}
+
+.footertop {
+  background: #09C762;
+}
+.footertop .detailimg {
+  height: 90px;
+  width: 1206px;
+  margin: 0 auto 20px;
+}
+.footertop .detailimg li {
+  float: left;
+}
+
+.footdetailmid dl dd a:hover, .footone-children .foot-sed li a:hover {
+  color: #FF4000;
+  text-decoration: underline;
+}
+
+.footdetailmid {
+  width: 100%;
+  height: 187px;
+  background: #F8F8F8;
+  margin-bottom: 20px;
+}
+.footdetailmid dl {
+  width: 190px;
+  height: 174px;
+  float: left;
+}
+.footdetailmid dl dt {
+  color: #666;
+  line-height: 30px;
+  font-size: 16px;
+}
+.footdetailmid dl dd a {
+  font-size: 12px;
+  line-height: 24px;
+  display: block;
+}
+.footdetailmid #ftcontact {
+  width: 250px;
+}
+.footdetailmid #ftcontact strong {
+  color: #ff4040;
+  font-size: 24px;
+}
+.footdetailmid #ftcontact p {
+  color: #666;
+  line-height: 24px;
+}
+
+.footmenu {
+  height: 60px;
+  margin: 20px 0;
+  display: none;
+  position: relative;
+}
+.footmenu p {
+  line-height: 27px;
+  color: #999;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.footmenu .footmenul {
+  height: 28px;
+  border-bottom: 1px solid #E5E5E5;
+}
+.footmenu .footmenul .notone {
+  color: #999;
+  line-height: 24px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.footmenu .footmenul li {
+  float: left;
+  width: 71px;
+  padding: 4px 0;
+}
+.footmenu .footmenul a {
+  color: #999;
+}
+.footmenu .footmenul .foot-one {
+  text-align: center;
+  position: relative;
+}
+.footmenu .footmenul .onhover {
+  border: 1px solid #E5E5E5;
+  padding: 7px 10px;
+  line-height: 24px;
+  border-bottom: 0;
+  font-weight: bold;
+  background: #f8f8f8;
+  margin-top: -1px;
+  position: relative;
+  top: -5px;
+}
+.footmenu .footmenul .thef01 .foot-sed {
+  display: block;
+}
+.footmenu .footmenul .foot-one > a {
+  border-right: 1px solid #E5E5E5;
+  display: inline-block;
+  width: 51px;
+  margin-top: 5px;
+  padding: 0 10px;
+}
+
+.footone-children {
+  height: 32px;
+}
+.footone-children .foot-sed {
+  padding: 10px 0;
+  text-align: left;
+  display: none;
+}
+.footone-children .foot-sed li {
+  margin-right: 12px;
+  line-height: 22px;
+  float: left;
+}
+.footone-children .foot-sed li a {
+  color: #999;
+}
+
+#endfl-one {
+  display: block;
+}
+
+.end {
+  width: 100%;
+  padding: 30px 0;
+  background: #fff;
+  text-align: center;
+}
+.end a {
+  color: #999;
+}
+.end a:hover {
+  text-decoration: underline;
+}
+.end div {
+  margin: 0 auto;
+}
+.end div a {
+  margin: 0 6px;
+}
+.end .endinstro {
+  line-height: 26px;
+  color: #999;
+  margin: 0 auto;
+}
+.end .endimg {
+  margin-top: 20px;
+}
+.end .endimg img {
+  margin: 0 10px;
+}

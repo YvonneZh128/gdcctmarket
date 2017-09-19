@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录页面</title>
+		<link rel="stylesheet" type="text/css" href="../css/login-Reg.css"/>
+		<script src="../js/require.js" data-main="../js/login.js"></script>
+	</head>
+	<body>
+		<!--加载页面头部-->
+		<div id="loadheader"></div>
+		<!--页面中间-->
+		<div class="loginbody">
+			<div class="loginmid">
+				<div class="loginleft">
+					<h3>用户登录</h3>
+					<form class="loginInfo" action="" method="post" >
+						<label class="unminline">
+							<span>用户名：</span>
+							<input class="loginuname" type="text" value="用户名/邮箱/手机号"/>
+							
+							<p></p>
+						</label>
+						<label class="pwdinline">
+							<span>密码：</span>
+							<input class="loginpwd" type="password" value=""/>
+							<a>忘记密码？</a>
+							<p></p>
+						</label>
+						
+						<div class="autologin">
+							<em><input type="checkbox"  /></em>
+							<span>下次自动登录</span?>
+							<p class="logintip">为了您的安全，请不要在公共网络使用此功能。</p>
+						</div>
+						<div class="btns">
+							<button class="loginsubmit"  type="submit">登录</button>
+							<a class="login2reg" href="register.html" type="button">免费注册<span></span></a>
+							
+						</div>
+					</form>
+					<div class="loginstyle">
+						<p>使用合作网站账号登录村村通商城 </p>
+						<a id="QQ" href="https://graph.qq.com/oauth/show?which=Login&display=pc&client_id=100224570&redirect_uri=http://www.gdcct.com/usercenter/qqCallBack.jspx&response_type=code&state=cad33bc2acdfbd9f8dca677152882130&scope=get_user_info,add_topic,add_one_blog,add_album,upload_pic,list_album,add_share,check_page_fans,add_t,add_pic_t,del_t,get_repost_list,get_info,get_other_info,get_fanslist,get_idollist,add_idol,del_ido,get_tenpay_addr"></a>
+						<a id="Wechat" href=""></a>
+						<a id="alipay" href="https://auth.alipay.com/login/express.htm?goto=https%3A%2F%2Fmemberexprod.alipay.com%3A443%2Fauthorize%2FuserAuthQuickLoginAction.htm%3Fe_i_i_d%3Dd264df4bf052cedc3c3386b9a6ce74d8"></a>
+						<a id="sinabo" href="https://api.weibo.com/oauth2/authorize?client_id=1832109743&redirect_uri=http://www.gdcct.com/usercenter/sinaWeiboCallBack.jspx&response_type=code"></a>
+						<a id="cmcc139" href="http://openlogin.mail.10086.cn/Web/OpenLogin.aspx?rnd=636413506492078054#&randomId=0.00860855993539511"></a>
+				
+					</div>
+				</div>
+				<a class="loginright" href="#"><img src="../img/14598413299934592.jpg"/></a>
+			</div>
+		</div>
+		
+		<!--加载页面尾部-->
+		<div id="loadfooter"></div>
+	</body>
+</html>

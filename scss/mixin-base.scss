@@ -1,0 +1,14 @@
+
+
+@mixin css3($property, $value){
+    #{$property}: $value;
+    -webkit-#{$property} : $value;
+    -moz-#{$property} : $value;
+    -ms-#{$property} : $value;
+}
+
+@mixin opacity($val){
+    opacity: $val;
+    filter: alpha(opacity=$val*100);
+}
+

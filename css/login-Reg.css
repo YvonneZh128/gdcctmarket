@@ -1,0 +1,376 @@
+body, p, h1, h2, h3, h4, h5, h6, ul, dl, dd, td, input, fieldset, textarea, option {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+img {
+  border: none;
+  vertical-align: top;
+}
+
+a, input {
+  outline: none;
+}
+
+h1, h2, h3, h4, h5, h6, b, strong {
+  font-weight: 100;
+}
+
+i, em {
+  font-style: normal;
+}
+
+body {
+  font: 12px "microsoft yahei";
+}
+
+.clear {
+  zoom: 1;
+}
+
+.clear:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.regbody {
+  width: 940px;
+  height: 540px;
+  margin: 50px auto;
+}
+
+.middle {
+  height: 417px;
+  background: #F7F7F7;
+  border: 1px solid #dedede;
+  margin: 0 auto;
+  padding: 25px 30px 0;
+}
+.middle .reg-hd {
+  width: 878px;
+  border-bottom: 1px solid #fff;
+}
+.middle .reg-hd h3 {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.regInfo {
+  padding: 50px 0 15px 0;
+  width: 500px;
+  display: inline-block;
+}
+.regInfo label {
+  display: block;
+  height: 52px;
+}
+.regInfo label img {
+  width: 16px;
+  height: 15px;
+  margin-top: 8px;
+  margin-left: 10px;
+  background: url(../img/loginpop.gif) no-repeat 0 0;
+  visibility: hidden;
+}
+.regInfo label .info {
+  display: inline-block;
+  width: 110px;
+  color: #333;
+  font-size: 14px;
+  text-align: right;
+}
+.regInfo label input {
+  display: inline-block;
+  width: 257px;
+  height: 26px;
+}
+.regInfo label .checkipt {
+  width: 97px;
+}
+.regInfo label p {
+  color: red;
+  margin-left: 112px;
+}
+.regInfo label .checkemail {
+  display: none;
+  width: 260px;
+  border: 1px solid #e5e5e5;
+  margin-left: 114px;
+  position: relative;
+  background: #fff;
+  z-index: 999;
+}
+.regInfo label .checkemail li {
+  color: #666666;
+  line-height: 25px;
+}
+.regInfo label .checkemail li:hover {
+  background: #e5e5e5;
+}
+.regInfo button {
+  width: 220px;
+  height: 30px;
+  border: 0;
+  position: relative;
+  background: #ff6a00;
+  color: #fff;
+  margin-left: 115px;
+}
+.regInfo button p {
+  width: 5px;
+  height: 9px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  background: url(../img/loginpop.gif) no-repeat -145px -34px;
+}
+
+.regright {
+  width: 300px;
+  height: 250px;
+  margin: 25px 0;
+  padding: 90px 0 0 60px;
+  float: right;
+  border-left: 1px solid #E5E5E5;
+}
+.regright .regtip {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.regright .regtip p {
+  margin-bottom: 10px;
+}
+.regright .tologin {
+  display: inline-block;
+  width: 70px;
+  height: 25px;
+  margin-right: 10px;
+  background: #009900;
+  color: #fff;
+  line-height: 25px;
+  text-align: center;
+}
+.regright .tologin:hover {
+  background: #09C762;
+}
+.regright .forgetpwd {
+  color: #06c;
+}
+.regright .forgetpwd:hover {
+  text-decoration: underline;
+  color: #FF4000;
+}
+.regright .collection {
+  width: 300px;
+  border-top: 1px solid #fff;
+}
+.regright .collection p {
+  padding-top: 13px;
+  margin-bottom: 20px;
+}
+.regright .collection a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  background: url(../img/loginPop.png) no-repeat;
+}
+
+#QQ {
+  background-position-x: 0;
+}
+
+#Wechat {
+  background-position-x: -35px;
+}
+
+#alipay {
+  background-position-x: -70px;
+}
+
+#sinabo {
+  background-position-x: -105px;
+}
+
+#cmcc139 {
+  background-position-x: -140px;
+}
+
+.loginbody {
+  width: 100%;
+  height: 514px;
+}
+.loginbody .loginmid {
+  margin: 0 auto;
+  width: 940px;
+  position: relative;
+}
+
+.loginleft {
+  width: 343px;
+  height: 387px;
+  padding: 25px 30px 0;
+  margin: 50px 0;
+  border: 1px solid #E5E5E5;
+  background: #F7F7F7;
+}
+.loginleft h3 {
+  color: #666;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 25px;
+  border-bottom: 1px solid #DEDEDE;
+}
+.loginleft .loginInfo {
+  width: 100%;
+  padding-top: 30px;
+  margin-right: 15px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #dedede;
+}
+.loginleft label {
+  display: block;
+  height: 48px;
+}
+.loginleft label span {
+  text-align: right;
+  display: inline-block;
+  font-size: 14px;
+  color: #333;
+  width: 56px;
+  line-height: 26px;
+}
+.loginleft label input {
+  width: 207px;
+  line-height: 26px;
+  padding-left: 3px;
+  border: 1px solid #BFBFBF;
+}
+.loginleft label p {
+  color: red;
+  margin-left: 56px;
+  line-height: 22px;
+}
+.loginleft .pwdinline a {
+  color: #0066CC;
+}
+.loginleft .pwdinline a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.loginsubmit {
+  width: 68px;
+  height: 28px;
+  padding: 1px 6px;
+  margin-right: 20px;
+}
+
+.loginright {
+  display: block;
+  width: 500px;
+  height: 415px;
+  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.autologin {
+  margin-left: 56px;
+  margin-top: 15px;
+}
+.autologin em {
+  padding: 5px;
+}
+.autologin .logintip {
+  color: #FF4040;
+  margin-top: 4px;
+  height: 22px;
+  border: 1px solid #FF2A00;
+  background: #F2DEDE;
+  padding-left: 10px;
+  visibility: hidden;
+}
+
+.btns {
+  margin-top: 10px;
+  margin-left: 56px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.btns .loginsubmit {
+  display: inline-block;
+  width: 68px;
+  height: 30px;
+  padding: 1px 6px;
+  background: #090;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+}
+.btns .loginsubmit:hover {
+  background: #00b300;
+}
+.btns .login2reg {
+  width: 88px;
+  text-align: center;
+  line-height: 28px;
+  padding: 1px 6px;
+  background: #ff8f40;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+}
+.btns .login2reg:hover {
+  background: #FF7F00;
+}
+.btns .login2reg span {
+  display: inline-block;
+  width: 5px;
+  height: 9px;
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  background: url(../img/loginpop.gif) no-repeat -145px -34px;
+}
+
+.loginstyle {
+  border-top: 1px solid #fff;
+}
+.loginstyle p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 20px;
+}
+.loginstyle a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  background: url(../img/loginPop.png) no-repeat;
+}

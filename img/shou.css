@@ -1,0 +1,59 @@
+﻿@charset "utf-8";
+
+/*商城放假弹出框*/
+
+.weiduduan{ 
+	width:550px; 
+	margin:15px auto 0 auto;
+}
+
+.tipfloat{
+	background:url(img/msg-bg.jpg) no-repeat;   /*修改路径*/
+}   
+.tipfloat{
+	display:none;
+	z-index:999;
+	position:fixed;
+	_position:absolute;
+	right:0px;
+	bottom:0;
+	width:320px;
+	height:300px;
+	overflow:hidden;
+}
+.tipfloat .tiphead{
+	height:28px;
+	line-height:28px;
+	overflow:hidden;
+	padding:0 5px;
+}
+.tipfloat .tiphead strong{
+	float:left;
+	color:#fff;
+	font-size:14px;
+} 
+.tipfloat .tiphead .close{
+	display:block;
+	float:right;
+	margin:5px 0 0 0;
+	width:18px;
+	height:18px;
+	line-height:999em;
+	overflow:hidden;
+	cursor:pointer;
+	
+}
+/* ranklist */
+.ranklist{
+	padding:10px 10px 0 10px;
+}
+.ranklist li{
+	line-height:20px;
+	overflow:hidden;
+	position:relative;
+	padding:0 10px 0 10px;
+	margin:0 0 10px 0;
+	vertical-align:bottom;
+}
+
+
